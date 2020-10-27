@@ -1,0 +1,41 @@
+{
+	"jackpot": {
+		"label": "Ukázkový jackpot",
+		"value": "96457823"
+	},
+	"name": {
+		"label": "Název pobočky",
+		"value": "Mánes a syn"
+	},
+	"address": {
+		"label": "Adresa",
+		"value": "Mánesova 625"
+	},
+	"postal_code": {
+		"label": "PSČ",
+		"value": "123 45"
+	},
+	"city": {
+		"label": "Město",
+		"value": "Benešov"
+	},
+	"phone": {
+		"label": "Telefon",
+		"value": "Tel.: 789 456 123"
+	},
+	"url": {
+		"label": "Webová adresa",
+		"value": "www.manes-a-syn.cz",
+		"type": "url"
+	},
+	"logo_horizontal": {
+		"label": "Horizontální logo",
+		"value": "https://cdn.nebe.app/demo/products/cross.svg",
+		"type": "image"
+	},
+	"logo_vertical": {
+		"label": "Vertikální logo",
+		"value": "https://cdn.nebe.app/demo/products/cross.svg",
+		"type": "image"
+	}
+}

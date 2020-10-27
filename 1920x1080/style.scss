@@ -1,0 +1,138 @@
+$width: 1920px;
+$height: 1080px;
+
+@font-face {
+	font-family: "Calling Code";
+	font-weight: 700;
+	src: url('../assets/callingcode-bold.otf');
+}
+
+@font-face {
+	font-family: "Calling Code";
+	font-weight: 400;
+	src: url('../assets/callingcode-regular.otf');
+}
+
+@font-face {
+	font-family: DINPro;
+	font-weight: 900;
+	src: url('../assets/DINPro-Black.otf');
+}
+
+@font-face {
+	font-family: DINPro;
+	font-weight: 700;
+	src: url('../assets/DINPro-Bold.ttf');
+}
+
+@font-face {
+	font-family: DINPro;
+	font-weight: 400;
+	src: url('../assets/DINPro-Regular.ttf');
+}
+
+@font-face {
+	font-family: DINPro;
+	font-weight: 300;
+	src: url('../assets/DINPro-Light.ttf');
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0 0 100px 0;
+	margin: 0;
+	font-family: DINPro, sans-serif;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+main {
+	position: relative;
+	width: $width;
+	height: $height;
+	overflow: hidden;
+	background: transparent;
+}
+
+.jackpot, .jackpot div, .blue, .dealer, .dealer article, .dealer img {
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	transform: translateZ(0);
+	will-change: transform;
+}
+
+.jackpot {
+	position: absolute;
+	top: 550px;
+	left: 825px;
+	height: 55px;
+	//outline: 1px solid red;
+	width: 435px;
+	text-align: center;
+
+	div {
+		text-align: center;
+		display: inline-block;
+		font-size: 61px;
+		line-height: 75px;
+		width: 42.5px;
+		margin: 0 5px 0 5px;
+		font-weight: 900;
+		background: #6CE9B0;
+		color: #000;
+		opacity: 0;
+		border-radius: 10px;
+	}
+}
+
+.blue {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: $width;
+	height: $height;
+	background: url("./blue.jpg");
+	opacity: 0;
+	pointer-events: none;
+}
+
+.dealer-wrapper {
+	position: absolute;
+	top: 200px;
+	width: $width;
+	text-align: center;
+	height: 800px;
+}
+
+.dealer {
+	//outline: 1px solid red;
+	padding-left: 100px;
+	padding-right: 100px;
+	width: auto;
+	margin: 0 auto;
+	display: inline-block;
+	text-align: left;
+	font-size: 90px;
+	font-weight: 700;
+	color: #7E2ECB;
+	font-family: "Calling Code", sans-serif;
+
+	article {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	img {
+		width: 300px;
+		height: 200px;
+		object-fit: contain;
+		object-position: left center;
+	}
+}
